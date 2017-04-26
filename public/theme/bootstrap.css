@@ -161,6 +161,36 @@ hr.database:after {
   color: #ff3385;
 }
 
+hr.diamond
+{
+  padding: 0;
+  border: none;
+  border-top: solid 5px;
+  text-align: center;
+  max-width: 550px;
+  margin: 50px auto 40px;
+}
+
+hr.diamond:after
+{
+  content: "\f135";
+  font-family: FontAwesome;
+  display: inline-block;
+  position: relative;
+  top: -0.8em;
+  font-size: 2.5em;
+  padding: 0 0.3em;
+}
+
+hr.diamond {
+  border-color: #ffff33;
+}
+
+hr.diamond:after {
+  background-color: white;
+  color: #ff3385;
+}
+
 pre {
   overflow: auto;
 }
@@ -384,8 +414,8 @@ img {
 .img-thumbnail {
   padding: 5px;
   line-height: 1.42857143;
-  background-color: #ff4d4d;
-  border: 5px solid #ff8c1a;
+  background-color: black;
+  border: 0px solid #ff8c1a;
   border-radius: 5px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
