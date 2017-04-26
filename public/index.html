@@ -20,10 +20,8 @@
   <div class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a href="images/magneticdrum.pdf" class="navbar-brand">
-          <img src="images/magneticdrum.png" style="width:125px;height:65px;">
-        </a>
-        <h3 class="navbar-text navbar-left" style="color:black">The Magic of Magnetic Digital Storage</h3>
+        <i class="fa fa-hdd-o faa-bounce animated fa-4x fa-pull-left" align="left" style="color:whitek" aria-hidden="true"></i>
+        <h1 class="navbar-text navbar-left" style="color:white">The Magic of Magnetic Digital Storage</h1>
       </div>
 
       <ul class="nav navbar-nav navbar-right">
@@ -43,13 +41,18 @@
 <!-- jumbotron -->
 
 <div class="container-fluid">
-  <div class="jumbotron" align="center">
-    <i class="fa fa-cog fa-spin fa-5x fa-fw" align="right" style="color:white" aria-hidden="true"></i>
+  <div class="jumbotron" style="background-color: white" align="center">
+    <i class="fa fa-cog fa-spin fa-5x fa-fw" align="right" style="color:black" aria-hidden="true"></i>
     <img src="images/lawsofstorage.png" class="img-rounded" alt="">
-    <i class="fa fa-cog fa-spin fa-5x fa-fw" align="left" style="color:white" aria-hidden="true"></i>
+    <i class="fa fa-cog fa-spin fa-5x fa-fw" align="left" style="color:black" aria-hidden="true"></i>
     <div class="caption">
       <h1>"Requirements for a Storage Devices"</h1>
-      <p style="font-size: 20px;">As described by Andrew D. Booth In "A Magnetic Digital Storage System" (1949)</p>
+      <h3>As described by Andrew D. Booth In "A Magnetic Digital Storage System" (1949)</h3>
+      <blockquote style="font-size: 15px;">
+        Early storage methods such as punchcards
+        and cathode-ray tubes satisfy only 2-3 of these requirements.</br>
+        How can we satisfy all of the requirements?
+      </blockquote>
     </div>
   </div>
 
@@ -59,9 +62,19 @@
   <div class="container">
     <div class="well" align="center">
       <i class="fa fa-magnet faa-shake animated fa-3x fa-fw" align="right" style="color:black" aria-hidden="true"></i>
+      <h2 style="color:black">Answer: Magnetic Storage</h2>
       <blockquote>
-        The utilization of magnetic memory and storage devices in computers marked an epoch of advancement in computer technologies,
-        during which the world was launched into the age of modern computing.
+        Magnetic recording technology encapsulates the magnetic storage medium, the read and write heads, the recording channel electronics,
+        the data encoding and clocking logic, and the technology that controls the
+        head-to-medium spacing. The chief attribute is areal density--the quantity of information bits that can be
+        stored on a given length of track, area of surface, or in a given volume of a computer storage medium.  Areal density
+        affects both capacity and performance and is the key parameter that determines the cost per Mbyte of storage.
+      </blockquote>
+      <h3 style="color:black">Why?</h3>
+      <blockquote>
+        The utilization of magnetic memory and storage devices in computers marked an epoch of advancement in computer technologies.
+        From 1950-1962, improvements in capacity, cost, performance, and reliability of computer systems due to the development of magnetic storage
+        devices launched the world into the era of modern computing.
       </blockquote>
     </div>
   </div>
@@ -78,7 +91,7 @@
         <div class="caption">
           <h3>Magnetic Drum</h3>
           <p>1950</p>
-          <p><a href="images/magneticdruminfo.pdf" class="btn btn-success" role="button">More Info</a></p>
+          <p><a href="pages/magneticdrum.html" class="btn btn-success" role="button">More Info</a></p>
         </div>
       </div>
     </div>
@@ -124,35 +137,29 @@
 
   <div class="container">
     <div class="well" align="center">
-      <i class="fa fa-line-chart faa-float animated fa-3x fa-fw" align="right" style="color:black" aria-hidden="true"></i>
+      <i class="fa fa-line-chart faa-float animated faa-fast fa-3x fa-fw" align="right" style="color:black" aria-hidden="true"></i>
       <blockquote>
-        The utilization of magnetic memory and storage devices in computers marked an epoch of advancement in computer technologies,
-        during which the world was launched into the age of modern computing.
+        [Gordon] Moore’s Law (1965) Simplified: Processor speeds,
+        or overall processing power for computers will double every two years.</br></br>
+
+        Moore extrapolated that computers would increase in processing speed and
+        decrease in cost at an exponential rate.  This observation changed computing from an expensive venture into an affordable dependency.
+        All of the modern computing technology we cherish sprang from the foundation laid by Gordon Moore’s.
       </blockquote>
+      <p><a href="pages/moores.html" class="btn btn-success" role="button">Graph</a></p>
     </div>
   </div>
 
   <hr class="star-light">
-
-  <div class="panel panel-success">
-    <div class="panel-heading" align="center">
-      <h3>A look at Moore's Law over the past ~120 years.  What trends do you notice?</h3>
-      <p style="font-size: 20px;">Look at the trend starting in the mid-1940s (era of the vacuum tube)</p>
-    </div>
-
-    <div class="panel-body" style="background-color:#ccffb3;" align="center">
-      <img class="img-rounded" src="images/mooreslaw.png" width="55%">
-    </div>
-  </div>
 </div>
 
 
 <!--footer-->
-<div class="panel-footer" align="center" style="width:100%">
-  <div style="color:#e3ff00">
+<div class="navbar navbar-default navbar-fixed-bottom" align="center">
+  <div style="color:white">
     <h2>About the Project</h2>
   </div>
-  <p><b>Created using Three.js--a JavaScript library for rendering 3D graphics in a web browser using WebGL.  <a href="https://github.com/mrdoob/three.js/">Source code</a>.</b></p>
+  <p><b>For STS-340: Finding Order in Nature.  <a href="https://nodejs.org/en/">Nodejs</a> application hosted by <a href="https://www.heroku.com/home">Heroku</a>.</b></p>
   <div>
     Copyright &copy; JohnBurnsProductions
   </div>
