@@ -1,5 +1,5 @@
 {
-  "name": "ThankYouNote",
+  "name": "MagneticMemory",
   "version": "1.0.0",
   "main": "index.html",
   "scripts": {
@@ -7,17 +7,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johncburns1/ThankYou.git"
+    "url": "git+https://github.com/johncburns1/MagneticMemory.git"
   },
   "author": "Jack Burns",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/johncburns1/ThankYou/issues"
+    "url": "https://github.com/johncburns1/MagneticMemory/issues"
   },
-  "homepage": "https://github.com/johncburns1/ThankYou#readme",
+  "homepage": "https://github.com/johncburns1/MagneticMemory#readme",
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
-    "mongodb": "^2.2.9"
+    "mongodb": "^2.2.9",
+    "jquery": "~3.2.1"
   }
 }
