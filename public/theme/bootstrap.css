@@ -1,4 +1,5 @@
 @import url("//fonts.googleapis.com/css?family=Lobster|Cabin:400,700");
+@import url("//fonts.googleapis.com/css?family=Montserrat:400,700");
 /*!
  * Homepage: http://usebootstrap.com
  * Licensed under MIT
@@ -94,11 +95,72 @@ svg:not(:root) {
 figure {
   margin: 1em 40px;
 }
+
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
+  text-align: center;
 }
+
+hr.star-light {
+  padding: 0;
+  border: none;
+  border-top: solid 5px;
+  text-align: center;
+  max-width: 550px;
+  margin: 50px auto 40px;
+}
+
+hr.star-light:after {
+  content: "\f0a0";
+  font-family: FontAwesome;
+  display: inline-block;
+  position: relative;
+  top: -0.8em;
+  font-size: 3em;
+  padding: 0 0.3em;
+}
+
+hr.star-light {
+  border-color: #ffff33;
+}
+
+hr.star-light:after {
+  background-color: white;
+  color: #ff3385;
+}
+
+hr.database
+{
+  padding: 0;
+  border: none;
+  border-top: solid 5px;
+  text-align: center;
+  max-width: 550px;
+  margin: 50px auto 40px;
+}
+
+hr.database:after
+{
+  content: "\f1c0";
+  font-family: FontAwesome;
+  display: inline-block;
+  position: relative;
+  top: -0.8em;
+  font-size: 2.5em;
+  padding: 0 0.3em;
+}
+
+hr.database {
+  border-color: #ffff33;
+}
+
+hr.database:after {
+  background-color: white;
+  color: #ff3385;
+}
+
 pre {
   overflow: auto;
 }
@@ -4380,6 +4442,11 @@ a.list-group-item.active > .badge,
 .container .jumbotron {
   border-radius: 6px;
 }
+
+.container-fluid .jumbotron {
+  border-radius: 4px;
+}
+
 .jumbotron .container {
   max-width: 100%;
 }
@@ -4399,10 +4466,11 @@ a.list-group-item.active > .badge,
 }
 .thumbnail {
   display:inline-flex;
-  padding: 10px;
+  padding: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
-  line-height: 1.42857143;
+  /*line-height: 1.42857143;*/
+  line-height: 2;
   background-color: #66b3ff;
   border: 0px solid #dddddd;
   border-radius: 4px;
@@ -4413,6 +4481,7 @@ a.list-group-item.active > .badge,
 .thumbnail a > img {
   margin-left: auto;
   margin-right: auto;
+  padding: 0px;
 }
 a.thumbnail:hover,
 a.thumbnail:focus,
@@ -4756,17 +4825,19 @@ a.list-group-item-danger.active:focus {
   margin-bottom: 30px;
   margin-top: 30px;
   background-color: #13a0aa;
-  border: 1px solid transparent;
+  border: 0px solid transparent;
   border-radius: 0px;
+  /*
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  */
 }
 .panel-body {
   padding: 15px;
   background-color: white;
 }
 .panel-heading {
-  padding: 25px 25px;
+  padding: 15px 15px;
   border-bottom: 1px solid transparent;
   border-top-color: #07ee22;
   border-bottom-color: #07ee22;
@@ -5041,26 +5112,29 @@ a.list-group-item-danger.active:focus {
   border-bottom-color: #d2491c;
 }
 .well {
-  position: fixed;
-  bottom: 0;
   min-height: 20px;
   padding: 20px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  background-color: #0d747c;
-  border: 1px solid #0a565c;
-  border-radius: 4px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: white;
+  border: 0px solid #0a565c;
+  border-radius: 0px;
+  /*
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  */
 }
 .well blockquote {
-  border-color: #ddd;
-  border-color: rgba(0, 0, 0, 0.15);
+  color: black;
+  /*border-color: rgba(0, 0, 0, 0.15);*/
 }
+
 .well-lg {
   padding: 24px;
   border-radius: 6px;
 }
+
 .well-sm {
   padding: 9px;
   border-radius: 3px;

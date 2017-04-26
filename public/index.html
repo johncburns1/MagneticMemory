@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
   <link rel="stylesheet" href="theme/bootstrap.css" media="screen">
   <link rel="stylesheet" href="theme/usebootstrap.css">
+  <link href="font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+  <link href="font-awesome/css/font-awesome-animation.css" rel="stylesheet" type="text/css">
   <script src="bootstrap/bootstrap.min.js"></script>
   <script src="bootstrap/usebootstrap.js"></script>
   <script src="js/jquery.min.js"></script>
@@ -40,26 +42,42 @@
 
 <!-- jumbotron -->
 
-<div class="container">
+<div class="container-fluid">
   <div class="jumbotron" align="center">
+    <i class="fa fa-cog fa-spin fa-5x fa-fw" align="right" style="color:white" aria-hidden="true"></i>
     <img src="images/lawsofstorage.png" class="img-rounded" alt="">
+    <i class="fa fa-cog fa-spin fa-5x fa-fw" align="left" style="color:white" aria-hidden="true"></i>
     <div class="caption">
-      <h1>The Laws of Computer Storage</h1>
-      <h4>As described by Andrew D. Booth In "A Magnetic Digital Storage System" (1949)</h4>
+      <h1>"Requirements for a Storage Devices"</h1>
+      <p style="font-size: 20px;">As described by Andrew D. Booth In "A Magnetic Digital Storage System" (1949)</p>
     </div>
   </div>
 
+  <!-- Thesis -->
+  <hr class="database">
+
+  <div class="container">
+    <div class="well" align="center">
+      <i class="fa fa-magnet faa-shake animated fa-3x fa-fw" align="right" style="color:black" aria-hidden="true"></i>
+      <blockquote>
+        The utilization of magnetic memory and storage devices in computers marked an epoch of advancement in computer technologies,
+        during which the world was launched into the age of modern computing.
+      </blockquote>
+    </div>
+  </div>
+
+  <hr class="database">
 
   <!--Thumbnails-->
   <div class="row">
 
     <!--The Magnetic Drum-->
     <div class="col-md-3">
-      <div class="thumbnail">
+      <div class="thumbnail faa-pulse animated-hover">
         <img src="images/boothdrum.png" alt="">
         <div class="caption">
           <h3>Magnetic Drum</h3>
-          <p>...</p>
+          <p>1950</p>
           <p><a href="images/magneticdruminfo.pdf" class="btn btn-success" role="button">More Info</a></p>
         </div>
       </div>
@@ -67,11 +85,11 @@
 
     <!-- Magnetic Tape -->
     <div class="col-md-3">
-      <div class="thumbnail" style="background-color: #cc66ff">
+      <div class="thumbnail faa-pulse animated-hover" style="background-color: #cc66ff">
         <img src="images/rt.png" alt="" width="245px" height="205px">
         <div class="caption">
-          <h3>Magnetic Tape</h3>
-          <p>...</p>
+          <h3>Magnetic Tape Memory</h3>
+          <p>1952</p>
           <p><a href="images" class="btn btn-success" role="button">More Info</a></p>
         </div>
       </div>
@@ -79,11 +97,11 @@
 
   <!-- Magnetic Core Memory -->
   <div class="col-md-3">
-    <div class="thumbnail" style="background-color: #00e68a">
+    <div class="thumbnail faa-pulse animated-hover" style="background-color: #00e68a">
       <img src="images/magneticcore.png" alt="" width="245" height="205">
       <div class="caption">
-        <h3>Core Memory</h3>
-        <p>...</p>
+        <h3>Magnetic Core Memory</h3>
+        <p>1953</p>
         <p><a href="images/magneticdrum.pdf" class="btn btn-success" role="button">More Info</a></p>
       </div>
     </div>
@@ -91,25 +109,43 @@
 
     <!-- Magnetic Disk -->
     <div class="col-md-3">
-      <div class="thumbnail" style="background-color: #ff6666">
+      <div class="thumbnail faa-pulse animated-hover" style="background-color: #ff6666">
         <img src="images/ramac.png" alt="" width="245px" height="150px">
         <div class="caption">
-          <h3>Magnetic Disk</h3>
-          <p>...</p>
+          <h3>Magnetic Disk Memory</h3>
+          <p>1956</p>
           <p><a href="images/magneticdrum.pdf" class="btn btn-success" role="button">More Info</a></p>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="panel panel-success">
-    <div class="panel-heading" align="center">
-      A look at Moore's Law over the past ~120 years.  What trends do you see?
+  <hr class="star-light">
+
+  <div class="container">
+    <div class="well" align="center">
+      <i class="fa fa-line-chart faa-float animated fa-3x fa-fw" align="right" style="color:black" aria-hidden="true"></i>
+      <blockquote>
+        The utilization of magnetic memory and storage devices in computers marked an epoch of advancement in computer technologies,
+        during which the world was launched into the age of modern computing.
+      </blockquote>
     </div>
-    <div class="panel-body" style="background-color:#ccffb3">Panel footer</div>
   </div>
 
+  <hr class="star-light">
+
+  <div class="panel panel-success">
+    <div class="panel-heading" align="center">
+      <h3>A look at Moore's Law over the past ~120 years.  What trends do you notice?</h3>
+      <p style="font-size: 20px;">Look at the trend starting in the mid-1940s (era of the vacuum tube)</p>
+    </div>
+
+    <div class="panel-body" style="background-color:#ccffb3;" align="center">
+      <img class="img-rounded" src="images/mooreslaw.png" width="55%">
+    </div>
+  </div>
 </div>
+
 
 <!--footer-->
 <div class="panel-footer" align="center" style="width:100%">
@@ -118,7 +154,7 @@
   </div>
   <p><b>Created using Three.js--a JavaScript library for rendering 3D graphics in a web browser using WebGL.  <a href="https://github.com/mrdoob/three.js/">Source code</a>.</b></p>
   <div>
-    Copyright &copy; JBProductions
+    Copyright &copy; JohnBurnsProductions
   </div>
 </div>
 </body>
