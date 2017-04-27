@@ -3199,7 +3199,7 @@ input[type="button"].btn-block {
 .dropup .caret,
 .navbar-fixed-bottom .dropdown .caret {
   border-top: 0;
-  border-bottom: 10px solid;
+  border-bottom: 0px solid;
   content: "";
 }
 .dropup .dropdown-menu,
