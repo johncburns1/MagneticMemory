@@ -3199,7 +3199,7 @@ input[type="button"].btn-block {
 .dropup .caret,
 .navbar-fixed-bottom .dropdown .caret {
   border-top: 0;
-  border-bottom: 0px solid;
+  border-bottom: 10px solid;
   content: "";
 }
 .dropup .dropdown-menu,
@@ -3812,7 +3812,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-fixed-bottom {
-  position: relative;
+  position:relative;
   right: 0;
   left: 0;
   z-index: 1030;
